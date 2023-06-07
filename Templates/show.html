@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance Charges Prediction</title>
+
+
+    
+</head>
+<body>
+   
+    <style>
+        body{
+            background-image: url('https://wi.wallpapertip.com/wsimgs/11-119907_health-care-images-hd.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    
+    <h1 style='color:tomato;'> Medical Insurance Charges Prediction </h1>
+<center>
+    <form method="GET" action ="/show_html_page">
+
+        <style>
+            label{color:white}
+        </style>
+
+            <label>Age:</label>
+            <input type = "text" name = "age">
+            </select>
+
+            <br>
+            <br>
+
+            <label>Sex:</label>
+            <select name = "sex">
+
+                <option value = "male">Male</option>
+                <option value = "female">Female</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label>BMI:</label>
+            <input type = "text" name = "bmi">
+            </select>
+
+
+            <br>
+            <br>
+
+            <label color:white>Children:</label>
+            <input type = "text" name = "children">
+            </select>
+
+
+            <br>
+            <br>
+
+            <label>Smoker:</label>
+            <label>Yes:</label> <input type = "radio" name="smoker" value = "yes">
+            <label>No:</label> <input type = "radio" name="smoker" value = "no">
+            </select>
+
+            <br>
+            <br>
+
+            <label> Region: </label>
+            <label for = "region",color:green;>
+            <select name = "region" id="region">
+                    <option value = "northeast">Northeast</option>
+                    <option value = "southeast">Southeast</option>
+                    <option value = "northwest">Northwest</option>
+                    <option value = "southwest">Southwest</option>
+            </select>
+
+            <br>
+            <br>
+
+            
+            <br>
+            <input type = "submit" value = "SUBMIT",color:green;>
+
+            <br>
+            
+            <p>Your Insurance Premium Charges will be <b>{{ prediction }} /- Rs.</b> Only. </p>
+
+        </form>
+
+    </center>
+    
+
+    <h2 style='color:yellow;'>Training accuracy -------- 	0.998215</h2>
+    <h2 style='color:yellow;'>Testing accuracy -------- 	0.997789</h2>
+
+</body>
+
+
+</html>
+
+
